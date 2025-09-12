@@ -27,10 +27,4 @@ document.addEventListener("DOMContentLoaded", function () {
       trackBotaoClick("btn-cadastrar");
     });
   }
-
-  if (videoElement) {
-    videoElement.addEventListener("click", function () {
-      trackVideoInteraction(videoTitle);
-    });
-  }
 });

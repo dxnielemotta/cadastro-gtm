@@ -14,10 +14,3 @@ function trackBotaoClick(buttonId) {
     button_id: buttonId,
   });
 }
-
-function trackVideoInteraction(videoTitle) {
-  window.dataLayer.push({
-    event: "video_interaction",
-    video_title: videoTitle,
-  });
-}

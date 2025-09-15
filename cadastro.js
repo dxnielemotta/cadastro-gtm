@@ -21,10 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-
   if (btn) {
     btn.addEventListener("click", function () {
       trackBotaoClick("btn-cadastrar");
     });
   }
+  
 });
+

@@ -40,19 +40,25 @@
       </form>
       <div id="mensagem" class="mensagem"></div>
     </div>
-    <div class="video">
-      <iframe
-        width="300"
-        height="200"
-        id="ytb-video"
-        src="https://www.youtube.com/embed/JeFPvUehQ-E?si=JN11-H0vPWAErtBe"
-        title="GTM Tutorial"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-    </div>
+    <div id="video-container"></div>
+    <script>
+      function loadYoutubeVideo() {
+        const container = document.getElementById("video-container");
+        const iframeHtml = `<iframe
+          width="300"
+          height="200"
+          src="https://www.youtube.com/embed/JeFPvUehQ-E?si=Qfj2c9VOn3fBTVum"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>`;
+
+        container.innerHTML = iframeHtml;
+        window.addEventListener("load", loadYouTubeVideo);
+      }
+    </script>
     <script src="./dataLayer.js"></script>
     <script src="./cadastro.js"></script>
   </body>

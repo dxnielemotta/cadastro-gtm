@@ -81,7 +81,7 @@ input:focus {
     min-height: 24px;
 }
 
-.video {
+#video-container {
     display: flex;
     padding: 50px;
 }

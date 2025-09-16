@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("cadastroForm");
   const mensagem = document.getElementById("mensagem");
   const btn = document.querySelector(".btn");
-  const videoElement = document.getElementById("ytb-video");
-  const videoTitle = videoElement.getAttribute("title");
 
   if (form) {
     form.addEventListener("submit", function (e) {
@@ -26,6 +24,4 @@ document.addEventListener("DOMContentLoaded", function () {
       trackBotaoClick("btn-cadastrar");
     });
   }
-  
 });
-
